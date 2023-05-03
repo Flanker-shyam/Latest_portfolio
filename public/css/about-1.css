@@ -1,0 +1,11 @@
+.item {
+  background: #333;
+  text-align: center;
+  height: 300px;
+}
+.sliders {
+  margin: 0;
+  color: #888;
+  padding-top: 80px;
+  font-size: 30px;
+}
