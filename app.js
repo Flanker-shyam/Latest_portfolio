@@ -25,9 +25,9 @@ app.get("/", async (req, res) => {
     res.render('index', { data, data });
 });
 
-app.get("/gitDataFlanker", (req, res) => {
+app.get("/gitDataFlanker", async (req, res) => {
     try {
-        User.deleteMany({ stargazers_count: { $gte: 1 } }).then(async () => {
+        await User.deleteMany({ stargazers_count: { $gte: 1 } }).then(async () => {
             let data = await getData('https://api.github.com/users/Flanker-shyam/repos');
             for (let i = 0; i < data.length; i++) {
                 const newuser = new User({

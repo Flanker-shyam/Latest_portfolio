@@ -1,0 +1,75 @@
+.item {
+  background: #333;
+  text-align: center;
+  height: 300px;
+}
+.sliders {
+  margin: 0;
+  color: #888;
+  padding-top: 80px;
+  font-size: 30px;
+}
+
+
+/* stats-card */
+#stats{
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-evenly;
+  width:100%;
+  flex-wrap: wrap;
+}
+
+.stats-card{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  max-width: 250px;
+  margin:20px;
+}
+
+/* project */
+
+#projects{
+  display: flex; 
+  flex-wrap: wrap; 
+  justify-content: space-evenly; 
+  align-items: center; 
+  margin:30px ;
+}
+
+.project-card{
+  margin:30px;
+  width:350px;
+  height:300px;
+  max-width:300px; 
+  background-color:black;
+  padding:20px;
+  border-radius: 8px;
+  color: white;
+  position: relative;
+  transition: transform 0.2s ease-in-out;
+  text-align: center;
+}
+
+.project-card:hover{
+  transform: scale(1.2);
+  background-color: transparent;
+  color:black;
+  border:2px solid black;
+}
+
+.portfolio-item{
+  position:absolute;
+  bottom:15px;
+  left:32%;
+}
+
+.btn-git:hover{
+  color:rgb(0, 0, 0);
+  background-color: transparent;
+  border: 3px solid black;
+}
