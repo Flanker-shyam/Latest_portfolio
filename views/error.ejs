@@ -1,0 +1,47 @@
+
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0, shrink-to-fit=no">
+        <title>error</title>
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap" rel="stylesheet">
+        <style>
+            body{
+                background-color: black;
+                font-family: 'Press Start 2P', cursive;
+            }
+            #error{
+                margin-top:10%;
+                display: flex;
+                flex-direction: column;
+                justify-content: center;
+                align-items: center;
+                text-align: center;
+                color:white;
+            }
+            #head-error{
+                font-size: 150px;
+            }
+            #return{
+                height:50px;
+                width:100px;
+                font-size: 20px;
+                font-family: 'Press Start 2P', cursive;
+                margin-top:20px;
+            }
+        </style>
+    </head>
+    <body>
+        <div id="error">
+            <h1 style="margin:30px;" id="head-error">404</h1>
+            <svg xmlns="http://www.w3.org/2000/svg" width="6em" height="6em" viewBox="0 0 24 24" fill="none">
+                <path d="M9.17163 16.1716C10.7337 14.6095 13.2664 14.6095 14.8285 16.1716M9 10H9.01M15 10H15.01M21 12C21 16.9706 16.9706 21 12 21C7.02944 21 3 16.9706 3 12C3 7.02944 7.02944 3 12 3C16.9706 3 21 7.02944 21 12Z" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"></path>
+            </svg>
+            <h2> <span id="para-error">Opps! The page you are looking for is not found!!</span></h2>
+            <a href="/"><button id="return">Home</button></a>
+        </div>
+    </body>
+</html>

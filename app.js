@@ -47,7 +47,11 @@ app.get("/gitDataFlanker", async (req, res) => {
     {
         res.send(exp.message);
     }
-})
+});
+
+app.get('*',(req,res)=>{
+    res.status(404).render('error',{});
+});
 
 connectDB();
 
