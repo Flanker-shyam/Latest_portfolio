@@ -73,3 +73,19 @@
   background-color: transparent;
   border: 3px solid black;
 }
+
+
+/* typing-*/
+
+#typing-text {
+  animation: typing-animation 2s steps(30) infinite;
+  }
+
+  @keyframes typing-animation {
+  from {
+      width: 0;
+  }
+  to {
+      width: 100%;
+  }
+  }
