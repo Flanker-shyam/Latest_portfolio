@@ -80,6 +80,4 @@ const getUserRepoName = async ()=>
     return ans;
 }
 
-
-getUserRepoName();
 module.exports = getUserRepoName;
