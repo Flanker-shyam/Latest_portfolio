@@ -28,7 +28,7 @@ app.get("/", async (req, res) => {
 app.get("/gitDataFlanker", async (req, res) => {
     try {
         await User.deleteMany({ stargazers_count: { $gte: 1 } }).then(async () => {
-            let data = await getData('https://api.github.com/users/Flanker-shyam/repos');
+            let data = await getData();
             for (let i = 0; i < data.length; i++) {
                 const newuser = new User({
                     name: data[i].name,
